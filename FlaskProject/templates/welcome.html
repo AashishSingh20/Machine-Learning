@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+        }
+
+        .card{
+            background:white;
+            width:500px;
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .icon{
+            font-size:80px;
+            margin-bottom:20px;
+        }
+
+        h1{
+            color:#333;
+            margin-bottom:10px;
+        }
+
+        .username{
+            color:#4facfe;
+            font-weight:bold;
+        }
+
+        p{
+            color:#666;
+            margin-top:15px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:12px 25px;
+            background:#4facfe;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#2196f3;
+        }
+
+        .footer{
+            margin-top:25px;
+            color:#999;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon">🎉</div>
+
+        <h1>Welcome, <span class="username">{{ username }}</span>!</h1>
+
+        <p>
+            Login Successful!<br>
+            You have successfully accessed the Flask application.
+        </p>
+
+        <a href="/" class="btn">Logout</a>
+
+        <div class="footer">
+            Flask Login Project 🚀
+        </div>
+    </div>
+
+</body>
+</html>
